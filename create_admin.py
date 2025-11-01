@@ -12,8 +12,8 @@ with app.app_context():
             print("Username cannot be empty.")
             raise SystemExit(1)
 
-        password = getpass.getpass("Enter password:")
-        confirm_pass = getpass.getpass("Confirm password: ")
+        password = input("Enter password: ")
+        confirm_pass = input("Confirm password: ")
         if password != confirm_pass:
             print("Passwords do not match. Exiting.")
             raise SystemExit(1)
@@ -21,5 +21,5 @@ with app.app_context():
         admin = Admin(username=username, is_admin=True)
         admin.set_password(password)
         db.session.add(admin)
-        db.sesion.commit()
+        db.session.commit()
         print(f"Admin user added: {username}")
