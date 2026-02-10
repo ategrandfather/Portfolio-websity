@@ -1,3 +1,7 @@
+How the site looks:
+https://portfolio-websity.onrender.com/
+
+
 FIRST LAUNCH:
 On first launch you'll have to create admin:
 > python create_admin.py 
@@ -19,7 +23,6 @@ images directory and change file, keeping the same name. Or, if you feeling
 like advanced user, change file, it's name and source proper link in index.html 
 
 About, Status, Picture are buttons that pop-up using JS script.
-
 
 FOR HEROKU USERS:
 For those like me, using SQLite database deploying site to Heroku, good luck.
